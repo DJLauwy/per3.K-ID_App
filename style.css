@@ -1,0 +1,121 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	background-color: #F5D0C3;
+}
+
+nav{
+	height:5vh;
+	padding:1.4vh;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+.startpagina{
+	width: 100vw;
+	height: 50vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.startpagina > p > a{
+	text-decoration: none;
+}
+
+.logo-container{
+	width: 100vw;
+	height: 25vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#que-logo{
+	border-radius: 25px;
+}
+
+#login-button{
+	font-family: Montserrat, sans-serif;
+	background-color: #FFF8F5;
+	font-size:20pt;
+	padding:20px 75px;
+	margin:15px;
+	border-radius:50px;
+	width:80vw;
+	box-sizing: border-box;
+}
+
+.startpagina > #login-button > a{
+	color:#F37649;
+}
+
+#registreer-button{
+	font-family:Montserrat, sans-serif;
+	background-color: #F37649;
+	font-size:20pt;
+	padding:20px 75px;
+	margin:15px;
+	border-radius:50px;
+	width:80vw;
+	box-sizing: border-box;
+}
+
+.startpagina > #registreer-button > a{
+	color:#FFF8F5;
+}
+
+#back{
+	font-family: Montserrat, sans-serif;
+	color:blue;
+}
+
+.registreer{
+	width: 100vw;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+form > p{
+	font-family: Montserrar, sans-serif;
+	font-size: 16pt;
+	color:#F37649;
+}
+
+.registreer > form > input{
+	margin:0px 15px 25px 15px;
+	padding:5px;
+	font-size:16pt;
+	height: 50px;
+	border-radius: 30px
+	/*border:2px solid #F38C67;*/
+	/*outline:none;*/
+}
+
+#opsturen{
+	background-color: #F37649;
+	font-size:20pt;
+	height: 80px;
+	/*padding:20px 75px 20px 75px;*/
+	margin:25px;
+	border-radius:50px;
+	width:80vw;
+	box-sizing: border-box;
+	color:#FFF8F5;
+}
