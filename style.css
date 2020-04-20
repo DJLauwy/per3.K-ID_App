@@ -14,10 +14,28 @@ body{
 }
 
 nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	height:5vh;
-	padding:1.4vh;
+	padding:1.4vh 0.5vh 1.4vh 1.4vh;
 	box-sizing: border-box;
 	background-color: #fff;
+}
+
+.oproepknop-klein{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #ff0000;
+	height:4vh;
+	width: 28vw;
+	border-radius: 2vh;
+}
+
+#arr-cir-rig-klein{
+	height:3vh;
+	width:3vh;
 }
 
 .startpagina{
@@ -81,6 +99,7 @@ nav{
 #back{
 	font-family: Montserrat, sans-serif;
 	color:blue;
+	font-size: 13pt;
 }
 
 .registreer{
@@ -118,4 +137,335 @@ form > p{
 	width:80vw;
 	box-sizing: border-box;
 	color:#FFF8F5;
+}
+
+	/* HOOFDPAGINA */
+	/* WELKOM SECTIE (12vh)[22vh totaal] */
+.welkom{
+	box-sizing: border-box;
+	display: flex;
+	align-items:center;
+	justify-content: space-around;
+	height:12vh;
+	width:100vw;
+}
+
+.home-logo{
+	width:22vw;
+	height:22vw;
+}
+
+.welkom-bericht{
+	width:72vw;
+}
+
+	/* BEKIJK WEEK (13vh)[25vh totaal] */
+.bekijk-week{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width:100vw;
+	height:13vh;
+}
+
+.bekijk-week > a > div{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #F9E6E0;
+	width:90vw;
+	height:8vh;
+	border-radius:4vh;
+}
+
+#button-text{
+	text-align:center;
+	width:80%;
+}
+
+#arr-cir-rig{
+	width:7vh;
+	height:7vh;
+}
+
+	/* BEKIJK VANDAAG (20vh)[45vh totaal] */
+.bekijk-vandaag{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	background-color: #F9E6E0;
+	width:90vw;
+	height:18vh;
+	border-radius:4vh;
+	margin:auto;
+	margin-bottom:2vh;
+}
+
+.bekijk-vandaag > div{
+	width:100vw;
+	height:18vh;
+	padding:1vh;
+	box-sizing: border-box;
+}
+
+.bekijk-vandaag > div > a > div{
+	background-color: #808CFF;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height:8vh;
+	border-radius:4vh;
+	width:80vw;
+	margin:auto;
+}
+
+	/* OPROEPKNOP UITLEG */
+.bekijk-vandaag > div > .voorbeeld-knop{
+	margin:auto;
+}
+
+.voorbeeld-knop{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width:50vw;
+	height:6.5vh;
+	border-radius:4vh;
+	background-color: #ff0000;
+}
+
+#voorbeeld-knop-tekst{
+	font-size:16pt;
+	color:#fff;
+	text-align:center;
+}
+
+#arr-cir-rig-example{
+	width:5vh;
+	height:5vh;
+}
+
+	/* OPROEPKNOP SECTIE */
+.oproepknop-sectie{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width:100vw;
+	height:10vh;
+	margin-top:20vh;
+}
+
+.oproepknop-groot{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #ff0000;
+	height:8vh;
+	border-radius:4vh;
+	width:90vw;
+	margin:auto;
+}
+
+#oproep-tekst-groot{
+	color:#fff;
+	width:70vw;
+	text-align: center;
+}
+
+#arr-cir-rig-groot{
+	width:6.5vh;
+	height: 6.5vh;
+}
+
+	/* WEEK */
+.week{
+	height:100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.dag{
+	width:100vw;
+	height:11vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding:0 15px;
+}
+
+.maandag{
+	background-color: #808CFF;
+}
+
+.dinsdag{
+	background-color: #FF5050;
+}
+
+.woensdag{
+	background-color: #80FF84;
+}
+
+.donderdag{
+	background-color: #FFFF80;
+}
+
+.vrijdag{
+	background-color: #C154FF;
+}
+
+.weekend{
+	background-color: #fff;
+}
+
+.aantal-taken{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width:7vh;
+	height:7vh;
+	background-color: red;
+	color:white;
+	border-radius: 3.5vh;
+}
+
+	/* DAG */
+
+.container{
+	width:100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	overflow: scroll;
+	padding:1vh 0;
+}
+
+.day{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background-color: #808CFF;
+	height:10vh;
+	width:100vw;
+}
+
+.taak{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width:90vw;
+	height:8vh;
+	background-color: #FFE9E1;
+	border-radius:2.5vh;
+	margin:1vh 0;
+}
+
+#arr-cir-rig-taak{
+	width:5.5vh;
+	height:5.5vh;
+}
+
+	/* TAAK */
+.taaktitel{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	height:10vh;
+	width:100vw;
+	background-color: #FF9874;
+	color:#fff;
+}
+
+.status{
+	height:10vh;
+}
+
+.uitleg{
+	margin:0.5vh 0;
+	height:5vh;
+}
+
+.uitleg > p{
+	text-align: center;
+	width:95%;
+}
+
+	/* HULP PAGINA */
+.opgeroepen{
+	background-color: #ff0000;
+}
+
+#hulp-logo{
+	width:60vw;
+	height:60vw;
+}
+
+.terugkeren{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #fff;
+	width:90vw;
+	height:10vh;
+	border-radius:5vh;
+	margin-top: 2vh;
+}
+
+#arr-cir-lef{
+	width:7vh;
+	height:7vh;
+}
+
+	/* TEKST */
+h1, h2, h3, h4, h5, p{
+	font-family: Montserrat, sans-serif;
+	color:#FF4200;
+}
+
+h1{
+
+}
+
+h2{
+	font-size: 14pt;
+}
+
+h6{
+	font-family: Montserrat, sans-serif;
+	color:#fff;
+	font-size: 26pt;
+}
+
+p{
+	font-size: 9pt;
+}
+
+#dagen-week{
+	font-size: 22pt;
+	width:70%;
+	color:#fff;
+}
+
+#dagen-week-day{
+	font-size: 22pt;
+	width:100%;
+	color:#fff;
+}
+
+#dagen-week-zwart{
+	font-size: 22pt;
+	width:70%;
+	color:#000;
+}
+
+#witte-tekst{
+	color:#fff;
+}
+
+#rode-tekst{
+	color:#ff0000;
 }
